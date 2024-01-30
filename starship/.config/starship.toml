@@ -41,7 +41,7 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol($version)]($style)\]'
 
 [docker_context]
-format = '\[[$symbol$context]($style)\]'
+format = ''
 
 [dotnet]
 format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'

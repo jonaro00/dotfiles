@@ -28,9 +28,10 @@ curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-
 cargo install --locked sccache
 echo -e "[build]\nrustc-wrapper = \"$HOME/.cargo/bin/sccache\"" > ~/.cargo/config.toml
 
-cargo binstall -y --locked atuin bacon bandwhich bat bore-cli bottom cargo-edit cargo-expand cargo-modules cargo-shuttle cargo-watch difftastic diskus du-dust exa fd-find gping hexyl onefetch ripgrep rust-script starship trunk zellij zoxide
+cargo binstall -y --locked atuin bacon bandwhich bat bore-cli bottom cargo-edit cargo-expand cargo-make cargo-modules cargo-shuttle cargo-watch difftastic diskus du-dust eza fd-find git-cliff gping hexyl onefetch ripgrep rust-script starship trunk zellij zoxide
 cargo install --locked cargo-info
 
 ####### Cleanup
 
-mv ~/.zshrc /tmp
+echo moving old zsh config
+mv ~/.zshrc ~/.zshrc.bak
