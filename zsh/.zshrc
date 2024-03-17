@@ -47,10 +47,12 @@ alias py=python3
 alias python=python3
 
 alias aptgrade="sudo apt update && sudo apt upgrade && sudo apt autoremove"
+alias disc="sudo dpkg -i $(ls -v ~/Downloads/discord*.deb | tail -1)"
 
 alias cs='cargo shuttle'
 alias rs='rust-script'
-alias makeiu='USE_PANAMAX=disable make images && USE_PANAMAX=disable make up'
+
+alias makeiu='make images && make up'
 if which docker > /dev/null && [ $(docker context show) = "desktop-linux" ]; then
     export DOCKER_HOST="unix://$HOME/.docker/desktop/docker.sock"
 fi
