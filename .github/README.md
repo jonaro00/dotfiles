@@ -1,7 +1,7 @@
 # dotfiles
 
 ```sh
-git clone --depth 1 https://github.com/jonaro00/dotfiles ~/.dotfiles
+git clone https://github.com/jonaro00/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 sh scripts/scripts/install-everything.sh
 sudo apt install stow
