@@ -9,7 +9,7 @@ source "$HOME/.cargo/env"
 
 export ZSH="$HOME/.oh-my-zsh"
 zstyle ':omz:update' mode disabled  # disable automatic updates
-plugins=(git ripgrep rust starship python)
+plugins=(direnv git python ripgrep rust starship)
 source $ZSH/oh-my-zsh.sh
 # custom git aliases
 alias gpsupu='git push --set-upstream upstream $(git_current_branch)'
