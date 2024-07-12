@@ -1,8 +1,0 @@
-export SCCACHE_MAX_SIZE="20G"
-
-# bun completions
-[ -s "/home/jonaro00/.bun/_bun" ] && source "/home/jonaro00/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
