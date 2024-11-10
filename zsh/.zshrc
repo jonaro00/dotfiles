@@ -1,4 +1,4 @@
-########################
+#######################
 
 # Node, pip and stuff
 export PATH="$HOME/.local/bin:$PATH"
@@ -36,7 +36,9 @@ eval $(ssh-agent) > /dev/null
 
 ########################
 
-export EDITOR="/home/jonaro00/.local/bin/nvim"
+if which nvim > /dev/null; then
+    export EDITOR="$(which nvim)"
+fi
 alias vim=nvim
 alias nv=nvim
 alias v=nvim
