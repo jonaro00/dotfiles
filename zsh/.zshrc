@@ -51,6 +51,7 @@ alias python=python3
 alias aptgrade="sudo apt update && sudo apt upgrade && sudo apt autoremove"
 alias disc='sudo dpkg -i $(ls -v ~/Downloads/discord*.deb | tail -1)'
 
+alias s='shuttle'
 alias cs='cargo shuttle'
 alias rs='rust-script'
 

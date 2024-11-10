@@ -4,8 +4,7 @@ if [ "$1" != "--zsh" ]; then
     sudo apt update
     sudo apt install -y zsh
     chsh -s $(which zsh)
-    zsh scripts/scripts/install-everything.sh --zsh
-    exit 0
+    exec zsh scripts/scripts/install-everything.sh --zsh
 fi
 
 ####### Shell
