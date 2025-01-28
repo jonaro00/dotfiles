@@ -30,6 +30,7 @@ bindkey '^r' _atuin_search_widget
 
 # cargo shuttle completions
 eval "$(cargo-shuttle generate shell zsh)"
+eval "$(shuttle generate shell zsh)"
 
 # ssh agent
 eval $(ssh-agent) > /dev/null
