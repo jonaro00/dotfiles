@@ -50,7 +50,8 @@ alias zshconfig="$EDITOR ~/.zshrc"
 alias py=python3
 alias python=python3
 
-alias aptgrade="sudo apt update && sudo apt upgrade && sudo apt autoremove"
+alias aptgrade="sudo apt update && sudo apt upgrade && sudo apt autoremove -y"
+alias aaa=aptgrade
 alias disc='sudo dpkg -i $(ls -v ~/Downloads/discord*.deb | tail -1)'
 
 alias s='shuttle'
