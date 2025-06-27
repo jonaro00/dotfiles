@@ -13,7 +13,7 @@ plugins=(direnv git python ripgrep rust starship)
 source $ZSH/oh-my-zsh.sh
 # custom git aliases
 alias gpsupu='git push --set-upstream upstream $(git_current_branch)'
-alias gsha='git rev-parse HEAD'
+alias gsha='git rev-parse --short HEAD && git rev-parse HEAD'
 
 ########################
 
