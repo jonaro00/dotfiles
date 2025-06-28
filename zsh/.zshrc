@@ -29,12 +29,13 @@ export ATUIN_NOBIND="true"
 eval "$(atuin init zsh)"
 bindkey '^r' _atuin_search_widget
 
-# cargo shuttle completions
+# shuttle completions
 eval "$(cargo-shuttle generate shell zsh)"
 eval "$(shuttle generate shell zsh)"
 
 # ssh agent
-eval $(ssh-agent) > /dev/null
+eval "$(ssh-agent)" > /dev/null
+trap 'eval "$(ssh-agent -k)" > /dev/null' EXIT
 
 ########################
 
