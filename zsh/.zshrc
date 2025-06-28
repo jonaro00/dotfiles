@@ -34,8 +34,10 @@ eval "$(cargo-shuttle generate shell zsh)"
 eval "$(shuttle generate shell zsh)"
 
 # ssh agent
-eval "$(ssh-agent)" > /dev/null
-trap 'eval "$(ssh-agent -k)" > /dev/null' EXIT
+if [ -z "$SSH_AGENT_PID" ]; then
+  eval "$(ssh-agent)" > /dev/null
+  trap 'eval "$(ssh-agent -k)" > /dev/null' EXIT
+fi
 
 ########################
 
@@ -46,7 +48,7 @@ alias vim=nvim
 alias nv=nvim
 alias v=nvim
 
-alias zshconfig="$EDITOR ~/.zshrc"
+alias zshconfig="${EDITOR:-nano} ~/.zshrc"
 
 alias py=python3
 alias python=python3
